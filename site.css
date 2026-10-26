@@ -30,52 +30,79 @@ body {
   color: var(--ink);
   font-family: Outfit, "Avenir Next", "Segoe UI", sans-serif;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.55;
 }
 img { display: block; max-width: 100%; }
 a { color: var(--indigo); }
-.wrap { width: min(880px, calc(100% - 48px)); margin: 0 auto; }
+.wrap { width: min(980px, calc(100% - 56px)); margin: 0 auto; }
 
 .site-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 0;
+  gap: 24px;
+  padding: 26px 0 18px;
 }
 .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
 .brand img { height: 36px; width: auto; }
 .brand .name { font-weight: 600; font-size: 18px; letter-spacing: -0.035em; line-height: 1; }
-.site-head a.mail { font-size: 15px; }
+.site-head a.mail { font-size: 16px; }
 
-.hero { padding: 72px 0 88px; }
-.kicker { margin: 0 0 14px; color: var(--muted); }
+.hero { padding: 64px 0 28px; }
 h1 {
   margin: 0;
-  max-width: 12em;
-  font-size: 52px;
+  max-width: 11em;
+  font-size: 64px;
   font-weight: 600;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
 }
-.lead { margin: 22px 0 0; max-width: 36em; font-size: 18px; }
+.lead {
+  margin: 28px 0 0;
+  max-width: 34em;
+  font-size: 20px;
+  line-height: 1.5;
+}
 
-.work {
+.services { padding-bottom: 28px; }
+.services article {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 28px;
-  padding: 8px 0 88px;
+  grid-template-columns: 220px 1fr;
+  gap: 36px;
+  padding: 32px 0;
   border-top: 1px solid var(--line);
 }
-.work h2 { margin: 28px 0 8px; font-size: 18px; font-weight: 600; letter-spacing: -0.03em; }
-.work p { margin: 0; color: var(--muted); }
-
-.site-foot {
-  background: var(--ink);
-  color: #F7F4EE;
+.services h2 {
+  margin: 2px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
 }
+.services p {
+  margin: 0;
+  max-width: 38em;
+  color: var(--ink);
+}
+
+.letter { background: var(--sheet); border-top: 1px solid var(--line); }
+.letter-inner { padding: 64px 0 72px; }
+.letter h2 {
+  margin: 0;
+  max-width: 14em;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.letter p { margin: 16px 0 0; max-width: 36em; color: var(--muted); }
+.letter-mail { margin-top: 22px; font-size: 22px; font-weight: 600; letter-spacing: -0.03em; }
+.letter-mail a { color: var(--indigo); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+.site-foot { background: var(--ink); color: #F7F4EE; }
 .site-foot .inner {
-  width: min(880px, calc(100% - 48px));
+  width: min(980px, calc(100% - 56px));
   margin: 0 auto;
   padding: 28px 0;
   display: flex;
@@ -86,12 +113,16 @@ h1 {
 .site-foot .brand .name { color: #F7F4EE; }
 .site-foot .brand img { height: 36px; }
 .site-foot p { margin: 0; color: #C8C2B6; font-size: 15px; }
-.site-foot a { color: #F7F4EE; }
 
-@media (max-width: 720px) {
-  h1 { font-size: 36px; }
-  .hero { padding: 48px 0 56px; }
-  .work { grid-template-columns: 1fr; gap: 0; padding-bottom: 48px; }
-  .work h2 { margin-top: 22px; }
+@media (max-width: 740px) {
+  body { font-size: 17px; }
+  .wrap, .site-foot .inner { width: min(980px, calc(100% - 36px)); }
+  h1 { font-size: 40px; }
+  .lead { font-size: 18px; }
+  .hero { padding-top: 40px; }
+  .services article { grid-template-columns: 1fr; gap: 8px; padding: 26px 0; }
+  .letter-inner { padding: 44px 0 52px; }
+  .letter h2 { font-size: 28px; }
+  .site-head a.mail { display: none; }
   .site-foot .inner { align-items: flex-start; flex-direction: column; }
 }
