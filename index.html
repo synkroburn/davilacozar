@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="apple-touch.png">
   <meta property="og:title" content="Dávila Cózar">
   <meta property="og:description" content="Desarrollo de aplicaciones, servidores y apps para Android e iOS.">
-  <meta property="og:image" content="https://synkroburn.github.io/davilacozar/og.png">
+  <meta property="og:image" content="https://davilacozar.es/og.png">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="site.css">
 </head>
@@ -20,16 +20,24 @@
       <img src="sello.svg" alt="">
       <span class="name">Dávila Cózar</span>
     </a>
-    <a class="mail" href="mailto:fran@davilacozar.es">fran@davilacozar.es</a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#hacemos">Qué hacemos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
   </header>
 
   <main>
-    <section class="wrap hero">
-      <h1>Empresa de 2026. Oficio de antes.</h1>
-      <p class="lead">Empezamos este año. El desarrollo de aplicaciones y la administración de servidores vienen de más atrás: programas que la gente usa cada día, máquinas que hay que dejar bien puestas, y el teléfono como sitio de trabajo.</p>
+    <section class="hero-stage" id="quienes">
+      <img class="hero-photo" src="fondo.jpg" alt="">
+      <div class="wrap hero">
+        <p class="kicker">Quiénes somos</p>
+        <h1>Empresa de 2026. Oficio de antes.</h1>
+        <p class="lead">Empezamos este año. El desarrollo de aplicaciones y la administración de servidores vienen de más atrás: programas que la gente usa cada día, máquinas que hay que dejar bien puestas, y el teléfono como sitio de trabajo.</p>
+      </div>
     </section>
 
-    <section class="wrap services" aria-label="Qué hacemos">
+    <section class="wrap services" id="hacemos" aria-label="Qué hacemos">
       <h2 class="section-title">Qué hacemos</h2>
       <article>
         <h2>El tamaño del proyecto</h2>
@@ -56,8 +64,8 @@
     <section class="letter">
       <div class="wrap letter-inner">
         <h2>Si tienes un encargo, escríbenos.</h2>
-        <p>Un correo basta para empezar. Si encaja, preparamos el presupuesto. La mitad a la aceptación y la mitad a la entrega, salvo otro acuerdo.</p>
-        <p class="letter-mail"><a href="mailto:fran@davilacozar.es">fran@davilacozar.es</a></p>
+        <p>Cuéntanos qué hay que hacer. Si encaja, preparamos el presupuesto. La mitad a la aceptación y la mitad a la entrega, salvo otro acuerdo.</p>
+        <p class="letter-mail"><a href="contacto.html">Ponerse en contacto</a></p>
       </div>
     </section>
   </main>
@@ -68,7 +76,11 @@
         <img src="sello-blanco.svg" alt="">
         <span class="name">Dávila Cózar</span>
       </a>
-      <p>Aplicaciones y servidores.</p>
+      <nav class="legal" aria-label="Información legal">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </nav>
     </div>
   </footer>
 </body>
