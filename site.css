@@ -66,6 +66,13 @@ h1 {
 }
 
 .services { padding-bottom: 28px; }
+.section-title {
+  margin: 56px 0 4px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
 .services article {
   display: grid;
   grid-template-columns: 220px 1fr;
