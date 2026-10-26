@@ -103,19 +103,17 @@ h1 {
   margin-top: 28px;
 }
 .card {
-  min-height: 340px;
   padding: 28px 22px 22px;
   border: 1px solid var(--line);
-  background-color: var(--sheet);
-  background-image:
-    linear-gradient(180deg, rgba(246,243,236,0.28), rgba(246,243,236,0.5)),
-    url("fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--sheet);
 }
-.card:nth-child(1) { background-position: center, 12% 35%; }
-.card:nth-child(2) { background-position: center, 55% 62%; }
-.card:nth-child(3) { background-position: center, 88% 28%; }
+.card-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
 .card h3 {
   margin: 0;
   font-size: 22px;
@@ -203,7 +201,6 @@ button:hover { background: #2A261F; }
   .site-head { align-items: flex-start; }
   .nav { gap: 10px 16px; font-size: 15px; }
   .cards { grid-template-columns: 1fr; }
-  .card { min-height: 0; }
   .photo-side,
   .letter.photo-side {
     background-image:
