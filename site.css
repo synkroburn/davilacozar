@@ -70,6 +70,10 @@ a { color: var(--indigo); }
   mask-image: linear-gradient(90deg, transparent 0%, #000 36%);
 }
 .hero { position: relative; padding: 72px 0 36px; }
+@media (min-width: 741px) {
+  .hero h1 { max-width: min(11em, 50vw); }
+  .hero .lead { max-width: min(32em, 46vw); }
+}
 .kicker { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
 h1 {
   margin: 0;
@@ -85,6 +89,49 @@ h1 {
   font-size: 20px;
   line-height: 1.5;
 }
+.hero-cta { margin: 28px 0 0; }
+a.button {
+  display: inline-block;
+  background: var(--ink);
+  color: #F7F4EE;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  padding: 12px 18px;
+}
+a.button:hover { background: #2A261F; }
+
+.story {
+  padding: 72px 0 12px;
+}
+.story h2 {
+  margin: 0;
+  max-width: 14em;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.story p {
+  margin: 18px 0 0;
+  max-width: 38em;
+}
+
+.projects { padding: 12px 0 64px; }
+.projects-lead { margin: 8px 0 0; max-width: 36em; color: var(--muted); }
+.projects article {
+  padding: 28px 0 0;
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+}
+.projects h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.tag { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.projects p:last-child { margin: 12px 0 0; max-width: 40em; }
 
 .services { padding-bottom: 28px; }
 .section-title {
@@ -170,6 +217,8 @@ button:hover { background: #2A261F; }
 }
 .site-foot .brand .name { color: #F7F4EE; }
 .site-foot .brand img { height: 36px; }
+.foot-id p { margin: 12px 0 0; color: #C8C2B6; font-size: 14px; line-height: 1.45; }
+.foot-id a { color: #F7F4EE; text-decoration: none; }
 .legal { display: flex; gap: 18px; flex-wrap: wrap; }
 .legal a { color: #C8C2B6; font-size: 14px; text-decoration: none; }
 .legal a:hover, .legal a[aria-current="page"] { color: #F7F4EE; }
@@ -184,6 +233,8 @@ button:hover { background: #2A261F; }
   .nav { gap: 14px; font-size: 15px; }
   .services article { grid-template-columns: 1fr; gap: 8px; padding: 26px 0; }
   .letter-inner { padding: 44px 0 52px; }
-  .letter h2 { font-size: 28px; }
+  .letter h2, .story h2 { font-size: 28px; }
+  .story { padding-top: 48px; }
+  .nav { gap: 12px; font-size: 14px; }
   .site-foot .inner { align-items: flex-start; flex-direction: column; }
 }

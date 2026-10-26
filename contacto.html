@@ -17,15 +17,16 @@
       <span class="name">Dávila Cózar</span>
     </a>
     <nav class="nav" aria-label="Secciones">
-      <a href="./#quienes">Quiénes somos</a>
+      <a href="./#forma">La forma de trabajar</a>
       <a href="./#hacemos">Qué hacemos</a>
+      <a href="./#proyectos">Proyectos</a>
       <a href="contacto.html" aria-current="page">Contacto</a>
     </nav>
   </header>
 
   <main class="wrap page">
-    <h1>Cuéntanos el encargo.</h1>
-    <p class="lead">Nombre, un correo donde responder y qué hay que hacer. Con eso basta para empezar.</p>
+    <h1>¿Tienes un proyecto en mente?</h1>
+    <p class="lead">Cuéntanos qué tienes en la cabeza. Miramos si se puede hacer y le damos forma.</p>
 
     <p class="sent" id="gracias" hidden>Mensaje enviado. Contestamos a la dirección que has dejado.</p>
 
@@ -34,7 +35,7 @@
       <input type="hidden" name="_next" value="https://davilacozar.es/contacto.html?enviado=1">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
-      <p class="hp">
+      <p class="hp" aria-hidden="true">
         <label>Deja este campo vacío<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
       </p>
       <p class="field">
@@ -42,24 +43,27 @@
         <input id="nombre" name="nombre" type="text" autocomplete="name" required>
       </p>
       <p class="field">
-        <label for="correo">Correo</label>
+        <label for="correo">Correo electrónico</label>
         <input id="correo" name="email" type="email" autocomplete="email" required>
       </p>
       <p class="field">
-        <label for="encargo">El encargo</label>
-        <textarea id="encargo" name="encargo" required></textarea>
+        <label for="encargo">Cuéntanos un poco sobre tu proyecto</label>
+        <textarea id="encargo" name="proyecto" required></textarea>
       </p>
-      <button type="submit">Enviar</button>
+      <button type="submit">Enviar mensaje</button>
       <p class="fine">También puedes escribir directamente a <a href="mailto:fran@davilacozar.es">fran@davilacozar.es</a>.</p>
     </form>
   </main>
 
   <footer class="site-foot">
     <div class="inner">
-      <a class="brand" href="./">
-        <img src="sello-blanco.svg" alt="">
-        <span class="name">Dávila Cózar</span>
-      </a>
+      <div class="foot-id">
+        <a class="brand" href="./">
+          <img src="sello-blanco.svg" alt="">
+          <span class="name">Dávila Cózar</span>
+        </a>
+        <p>Badajoz, España<br><a href="mailto:fran@davilacozar.es">fran@davilacozar.es</a></p>
+      </div>
       <nav class="legal" aria-label="Información legal">
         <a href="aviso-legal.html">Aviso legal</a>
         <a href="privacidad.html">Privacidad</a>
