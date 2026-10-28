@@ -35,7 +35,7 @@
     done = true;
     form.hidden = true;
     gracias.hidden = false;
-    gracias.textContent = "Gracias. Ya tenemos el mensaje y te escribimos a ese correo.";
+    gracias.textContent = "Hemos recibido tu mensaje. Contactaremos con usted lo antes posible. Gracias.";
   }
 
   form.addEventListener("submit", function (event) {
