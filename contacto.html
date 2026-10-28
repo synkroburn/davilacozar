@@ -8,7 +8,7 @@
   <link rel="icon" href="sello.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch.png">
-  <link rel="stylesheet" href="site.css?v=7">
+  <link rel="stylesheet" href="site.css?v=8">
 </head>
 <body>
   <header class="wrap site-head">
@@ -28,11 +28,11 @@
     <h1>¿Tienes un proyecto en mente?</h1>
     <p class="lead">Cuéntanos qué tienes en la cabeza. Miramos si se puede hacer y le damos forma.</p>
 
-    <p class="sent" id="gracias" hidden>Mensaje enviado. Contestamos a la dirección que has dejado.</p>
+    <p class="sent" id="gracias" hidden role="status"></p>
 
     <form class="form" action="https://formsubmit.co/fran@davilacozar.es" method="POST">
       <input type="hidden" name="_subject" value="Encargo desde davilacozar.es">
-      <input type="hidden" name="_next" value="https://davilacozar.es/contacto.html?enviado=1">
+      <input type="hidden" name="_next" value="https://davilacozar.es/gracias.html">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <p class="hp" aria-hidden="true">
@@ -50,6 +50,11 @@
         <label for="encargo">Cuéntanos un poco sobre tu proyecto</label>
         <textarea id="encargo" name="proyecto" required></textarea>
       </p>
+      <p class="field">
+        <label for="suma">Para filtrar el spam, ¿cuánto es <span data-a>4</span> + <span data-b>5</span>?</label>
+        <input id="suma" data-answer type="text" inputmode="numeric" autocomplete="off" required>
+      </p>
+      <p class="form-error" id="aviso-form" hidden role="alert"></p>
       <button type="submit">Enviar mensaje</button>
       <p class="fine">También puedes escribir directamente a <a href="mailto:fran@davilacozar.es">fran@davilacozar.es</a>.</p>
     </form>
@@ -68,11 +73,6 @@
       </nav>
     </div>
   </footer>
-  <script>
-    if (new URLSearchParams(location.search).has("enviado")) {
-      document.getElementById("gracias").hidden = false;
-      document.querySelector(".form").hidden = true;
-    }
-  </script>
+  <script src="form.js?v=2"></script>
 </body>
 </html>

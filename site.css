@@ -170,7 +170,9 @@ button {
 }
 button:hover { background: #2A261F; }
 .fine { margin: 16px 0 0; max-width: 36em; color: var(--muted); font-size: 15px; }
-.sent { margin: 28px 0 0; font-size: 20px; }
+.sent { margin: 28px 0 0; max-width: 36em; font-size: 20px; }
+.form-error { margin: 0 0 12px; max-width: 36em; font-size: 15px; }
+button:disabled { opacity: 0.55; cursor: wait; }
 .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
 
 .page { padding: 36px 0 80px; }

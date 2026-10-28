@@ -12,7 +12,7 @@
   <meta property="og:description" content="Nosotros nos encargamos de todo.">
   <meta property="og:image" content="https://davilacozar.es/og.png">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="site.css?v=7">
+  <link rel="stylesheet" href="site.css?v=8">
 </head>
 <body>
   <header class="wrap site-head">
@@ -128,9 +128,10 @@
       <div class="wrap">
         <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
         <p class="section-lead">Cuéntanos qué tienes en la cabeza. Miramos si se puede hacer y le damos forma.</p>
+        <p class="sent" id="gracias" hidden role="status"></p>
         <form class="form" action="https://formsubmit.co/fran@davilacozar.es" method="POST">
           <input type="hidden" name="_subject" value="Proyecto desde davilacozar.es">
-          <input type="hidden" name="_next" value="https://davilacozar.es/contacto.html?enviado=1">
+          <input type="hidden" name="_next" value="https://davilacozar.es/gracias.html">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <p class="hp" aria-hidden="true"><label>Deja este campo vacío<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
@@ -146,6 +147,11 @@
             <label for="proyecto">Cuéntanos un poco sobre tu proyecto</label>
             <textarea id="proyecto" name="proyecto" required></textarea>
           </p>
+          <p class="field">
+            <label for="suma">Para filtrar el spam, ¿cuánto es <span data-a>4</span> + <span data-b>5</span>?</label>
+            <input id="suma" data-answer type="text" inputmode="numeric" autocomplete="off" required>
+          </p>
+          <p class="form-error" id="aviso-form" hidden role="alert"></p>
           <button type="submit">Enviar mensaje</button>
         </form>
       </div>
@@ -165,5 +171,6 @@
       </nav>
     </div>
   </footer>
+  <script src="form.js?v=2"></script>
 </body>
 </html>
