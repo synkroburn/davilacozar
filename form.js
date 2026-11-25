@@ -60,7 +60,7 @@
       if (done) return;
       button.disabled = false;
       aviso.hidden = false;
-      aviso.textContent = "No se ha podido enviar. Escríbenos a fran@davilacozar.es.";
+      aviso.textContent = "No se ha podido enviar. Escríbenos a fran@codigodc.es.";
     }, 45000);
   });
 })();
